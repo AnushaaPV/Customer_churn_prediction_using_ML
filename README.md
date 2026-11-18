@@ -98,12 +98,25 @@ with open("encoder.pkl", "rb") as f:
     encoders = pickle.load(f)
 
 customer = {
-    "gender": "Female", "SeniorCitizen": 0, "Partner": "Yes", "Dependents": "No",
-    "tenure": 1, "PhoneService": "No", "MultipleLines": "No phone service",
-    "InternetService": "DSL", "OnlineSecurity": "No", "OnlineBackup": "Yes",
-    "DeviceProtection": "No", "TechSupport": "No", "StreamingTV": "No",
-    "StreamingMovies": "No", "Contract": "Month-to-month", "PaperlessBilling": "Yes",
-    "PaymentMethod": "Electronic check", "MonthlyCharges": 29.85, "TotalCharges": 29.85
+    "gender": 0,              
+    "SeniorCitizen": 0,
+    "Partner": 1,            
+    "Dependents": 0,          
+    "tenure": 1,
+    "PhoneService": 0,        
+    "MultipleLines": 1,      
+    "InternetService": 0,    
+    "OnlineSecurity": 0,      
+    "OnlineBackup": 2,       
+    "DeviceProtection": 0,    
+    "TechSupport": 0,         
+    "StreamingTV": 0,         
+    "StreamingMovies": 0,     
+    "Contract": 0,           
+    "PaperlessBilling": 1,    
+    "PaymentMethod": 2,       
+    "MonthlyCharges": 29.85,
+    "TotalCharges": 29.85
 }
 
 df = pd.DataFrame([customer])
